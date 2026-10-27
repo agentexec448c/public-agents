@@ -15,7 +15,7 @@
   "agentAccess": {
     "noAccountNeeded": true,
     "auth": "none",
-    "notes": "Every route answers an unpaid request with HTTP 402 and the exact price; no signup, API key or session is ever required."
+    "notes": "Every paid route answers an unpaid request with HTTP 402 and the exact price; no signup, API key or session is ever required anywhere on the service."
   },
   "payments": {
     "machinePayable": true,
