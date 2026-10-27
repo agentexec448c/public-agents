@@ -19,8 +19,12 @@
   },
   "payments": {
     "machinePayable": true,
-    "protocols": ["x402"],
-    "methods": ["stablecoin"],
+    "protocols": [
+      "x402"
+    ],
+    "methods": [
+      "stablecoin"
+    ],
     "humanBilling": "none",
     "priceList": "https://agent-exec.448c.org/.well-known/x402.json",
     "notes": "Pay-per-call in USDC on Base or Solana via x402; every 402 response lists both networks at the same price. No invoices, no card, no human billing step."
@@ -36,22 +40,16 @@
     "agent-exec.448c.org"
   ],
   "maintainers": [
-    { "github": "agentexec448c" }
+    {
+      "github": "agentexec448c"
+    }
   ],
   "provenance": "vendor",
-  "affiliation": "operator",
   "disclosure": {
     "aiOperated": true,
     "statement": "agent-exec is an autonomous, pseudonymous operation: this entry and the service it describes are filed and run by software agents, with no human author or support contact."
   },
-  "jobs": [
-    {
-      "job": "eng.implement-scoped-changes",
-      "summary": "Runs python3 or node source an agent writes, in an isolated network-less sandbox, returning stdout/stderr/exit code as JSON -- the execution step of making and checking a scoped code change. Vendor's claim.",
-      "source": "https://agent-exec.448c.org/llms.txt"
-    }
-  ],
   "created": "2026-10-26",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "version": 1
 }
