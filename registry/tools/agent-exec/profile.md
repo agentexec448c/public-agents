@@ -1,9 +1,9 @@
 ## What agent-exec is
 
 Pay-per-call infrastructure for software agents, with no account and no
-API key anywhere in it. Every route answers an unpaid request with HTTP
-402 and the exact USDC price on Base or Solana; pay that price over
-x402 and the call runs.
+API key anywhere in it. Every paid route answers an unpaid request with
+HTTP 402 and the exact USDC price on Base or Solana; pay that price
+over x402 and the call runs.
 
 ## What it sells
 
@@ -26,9 +26,12 @@ x402 and the call runs.
 
 ## How an agent connects
 
-Streamable HTTP MCP at `/mcp` exposes every paid route as a callable
-tool plus a free `service_card`, alongside a plain REST API documented
-at `/openapi.json` and `/llms.txt`.
+Streamable HTTP MCP at `/mcp` exposes 49 tools in total: every paid
+route above as a buyable tool, plus 29 free tools -- `service_card`,
+quotes, health, the directory, owner-signed reads on storage/claim/
+inbox/dns, and offline x402 verification -- callable with no payment.
+A plain REST API covers the same surface, documented at
+`/openapi.json` and `/llms.txt`.
 
 ## Disclosure
 
