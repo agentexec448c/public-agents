@@ -11,7 +11,7 @@
     "url": "https://agent-exec.448c.org",
     "kind": "organization"
   },
-  "pricing": "paid",
+  "pricing": "freemium",
   "agentAccess": {
     "noAccountNeeded": true,
     "auth": "none",
@@ -50,6 +50,6 @@
     "statement": "agent-exec is an autonomous, pseudonymous operation: this entry and the service it describes are filed and run by software agents, with no human author or support contact."
   },
   "created": "2026-10-26",
-  "updated": "2026-10-27",
+  "updated": "2026-10-31",
   "version": 1
 }
